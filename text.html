@@ -10,151 +10,284 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css"
-  </head>
-  <body>
-    <div id="navbar">
-        <a href="#">Dashboard</a>    
-        <a href="#">User Management</a> 
-        <a href="#">Role Management</a>
-        <a href="#">Post Management</a>
-        <a href="#">Report Management</a>
-        <a href="#">Setting</a>
-    </div>
-    <div id="content">
-      <div id="left">
-         <h1>Post Management</h1>
-        <div class="table"></div>
-        <table>
-            <thread>
-                <tr>
-                    <th class = "search" colspan="5" >
-                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <input type = "text" placeholder="Search" />
-                        <button id="button">search</button>
-                    </th>
-                </tr>
-                <tr>
-                    <th>ID Post</th>
-                    <th>Content</th>
-                    <th>Date Time</th>
-                    <th>Category</th>
-                    <th>Poster</th>
-                    <th>Likes</th>
-                    <th>Comment</th>
-                </tr>
-            </thread>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>the dog eating</td>
-                    <td>10PM 21-1-2023</td>
-                    <td>Pet</td>
-                    <td>John Smith</td>
-                    <td>100K</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>the show tonight</td>
-                    <td>9AM 10-2-2023</td>
-                    <td>show</td>
-                    <td>James</td>
-                    <td>100K</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>I have a breakfast</td>
-                    <td>7AM 21-1-2023</td>
-                    <td>Food</td>
-                    <td>Laury</td>
-                    <td>100K</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Tonight i have to  </td>
-                    <td>7PM 21-1-2023</td>
-                    <td>Hang Out</td>
-                    <td>John Cena</td>
-                    <td>100K</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>I have a breakfast</td>
-                    <td>7AM 21-1-2023</td>
-                    <td>Food</td>
-                    <td>Laury</td>
-                    <td>100K</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>I have a breakfast</td>
-                    <td>7AM 21-1-2023</td>
-                    <td>Food</td>
-                    <td>Laury</td>
-                    <td>100K</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>I have a breakfast</td>
-                    <td>7AM 21-1-2023</td>
-                    <td>Food</td>
-                    <td>Laury</td>
-                    <td>100K</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>I have a breakfast</td>
-                    <td>7AM 21-1-2023</td>
-                    <td>Food</td>
-                    <td>Laury</td>
-                    <td>100K</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>I have a breakfast</td>
-                    <td>7AM 21-1-2023</td>
-                    <td>Food</td>
-                    <td>Laury</td>
-                    <td>100K</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>I have a breakfast</td>
-                    <td>7AM 21-1-2023</td>
-                    <td>Food</td>
-                    <td>Laury</td>
-                    <td>100K</td>
-                    <td>10</td>
-                </tr>
-                <tr class="footer">
-                    <td colspan="6" >
-                      <span><i class="fa-solid fa-caret-left"></i></span>
-                      <span>1</span>
-                      <span>2</span>
-                      <span>3</span>
-                      <span>4</span>
-                      <span>5</span>
-                      <span>...</span>
-                      <span>30</span>
-                      <span><i class="fa-solid fa-caret-right"></i></span>
-                    </td>
-                  </tr>
-            </tbody>
-        </table>
-      </div>
+      rel="stylesheet"/>
       
-    </div>
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- <script src="./main.js"></script> -->
+</head>
+  <body>
+    <header>
+        <!--Navbar-->
+        <div class="navbar">
+            <a>ADMIN</a>
+
+            <!--Navigation-->
+                <a>Dasboard</a> 
+                <a>User Management</a>
+                <a>Role Management</a>
+                <a>Post Management</a>
+                <a>Report Management</a>
+                <a>Setting</a>
+        </div>
+    </header>
+        <div class="content">
+
+            <div class="first">
+                <div class="left">
+                    <table>
+                        <h1>Post Management</h1>
+                        <thead>
+                            <tr>
+                                <th class="search" colspan="5"> 
+                                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                    <input class="input" type="text" placeholder="Search" />
+                                </th>
+                                <th></th>
+                                <th></th>
+                                <th style="background-color: #262626;">
+                                    <button class="button" type="Search">Search</button>
+                                </th>
+
+                            </tr>
+                            <tr>
+                                <th>ID</th>
+                                <th>Content</th>
+                                <th>Date Time</th>
+                                <th>Category</th>
+                                <th>Poster</th>
+                                <th>Like</th>
+                                <th>Comment</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                            <td>1</td>
+                            <td>The dog eating</td>
+                            <td>10PM 21-1-2023</td>
+                            <td>Pet</td>
+                            <td>John Smith</td>
+                            <td>100k</td>
+                            <td>10k</td>
+                            <td><span class="material-symbols-outlined">
+                                chevron_right
+                                </span>
+                            </td> 
+                           </tr>
+                           <tr>
+                            <td>2</td>
+                            <td>The show tonight</td>
+                            <td>9PM 10-2-2023</td>
+                            <td>Show</td>
+                            <td>James</td>
+                            <td>123K</td>
+                            <td>80K</td>
+                            <td><span class="material-symbols-outlined">chevron_right</span>
+                            </td> 
+                           </tr>
+                           <tr>
+                            <td>3</td>
+                            <td>I have a bread</td>
+                            <td>7AM 11-2-2023</td>
+                            <td>Food</td>
+                            <td>Laury</td>
+                            <td>80K</td>
+                            <td>10K</td>
+                            <td><span class="material-symbols-outlined">
+                                chevron_right
+                                </span>
+                            </td> 
+                           </tr>
+                           <tr>
+                            <td>4</td>
+                            <td>Tonight i have to</td>
+                            <td>8PM 15-2-2023</td>
+                            <td>Hangout</td>
+                            <td>John Cenna</td>
+                            <td>111K</td>
+                            <td>80K</td>
+                            <td><span class="material-symbols-outlined">
+                                chevron_right
+                                </span>
+                            </td> 
+                           </tr>
+                           <tr>
+                            <td>5</td>
+                            <td>Earn money so easy</td>
+                            <td>6PM 10-3-2023</td>
+                            <td>Money</td>
+                            <td>Jacky Buck</td>
+                            <td>200K</td>
+                            <td>100K</td>
+                            <td><span class="material-symbols-outlined">
+                                chevron_right
+                                </span>
+                            </td> 
+                           </tr>
+                           <tr>
+                            <td>6</td>
+                            <td>Im eating and drink</td>
+                            <td>11AM 11-3-2023</td>
+                            <td>Food, Drink</td>
+                            <td>Hary</td>
+                            <td>100K</td>
+                            <td>20K</td>
+                            <td><span class="material-symbols-outlined">
+                                chevron_right
+                                </span>
+                            </td> 
+                           </tr>
+                           <tr>
+                            <td>7</td>
+                            <td>Play basketball</td>
+                            <td>5PM 22-3-2023</td>
+                            <td>Sport</td>
+                            <td>Stephen Curry</td>
+                            <td>500K</td>
+                            <td>100K</td>
+                            <td><span class="material-symbols-outlined">
+                                chevron_right
+                                </span>
+                            </td> 
+                           </tr>
+                           <tr>
+                            <td>8</td>
+                            <td>Eating with family</td>
+                            <td>7:30PM 23-3-2023</td>
+                            <td>Food, Family</td>
+                            <td>Joe</td>
+                            <td>50K</td>
+                            <td>10K</td>
+                            <td><span class="material-symbols-outlined">
+                                chevron_right
+                                </span>
+                            </td> 
+                           </tr>
+                           <tr>
+                            <td>9</td>
+                            <td>Meet friend and play</td>
+                            <td>9AM 25-3-2023</td>
+                            <td>Hangout</td>
+                            <td>Soe</td>
+                            <td>20K</td>
+                            <td>10K</td>
+                            <td><span class="material-symbols-outlined">
+                                chevron_right
+                                </span>
+                            </td> 
+                           </tr>
+                           <tr>
+                            <td>10</td>
+                            <td>Meet customer</td>
+                            <td>8AM 30-3-2023</td>
+                            <td>Business</td>
+                            <td>Jimmy</td>
+                            <td>100K</td>
+                            <td>80K</td>
+                            <td><span class="material-symbols-outlined">
+                                chevron_right
+                                </span>
+                            </td> 
+                           </tr>
+                           <tr class="footer">
+                            <td colspan="8" >
+                              <span><i class="fa-solid fa-caret-left"></i></span>
+                              <span>1</span>
+                              <span>2</span>
+                              <span>3</span>
+                              <span>4</span>
+                              <span>5</span>
+                              <span>...</span>
+                              <span>10</span>
+                              <span><i class="fa-solid fa-caret-right"></i></span>
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="right">
+                    <div class="row">
+                    </div>
+                    <table>
+                        <h1>List Category</h1>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="rsearch">
+
+                                    
+                                    <span ><i class="fa-solid fa-magnifying-glass"></i></span>
+                                    <input  type="text" placeholder="Search" />
+                                </div>
+                            </th>
+                            <th style="background-color: #262626;"><button class="button" type="Add new">Add new<i class="fa-solid fa-plus"></i></button>
+                            </th>
+                            </tr>
+                            <tr>
+                                <th>ID Poster</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Pet</td>
+                               </tr>
+                               <tr>
+                                <td>2</td>
+                                <td>Food</td>
+                               </tr>
+                               <tr>
+                                <td>3</td>
+                                <td>Business</td>
+                               </tr>
+                               <tr>
+                                <td>4</td>
+                                <td>Sport</td>
+                               </tr>
+                               <tr>
+                                <td>5</td>
+                                <td>Drink</td>
+                               </tr>
+                               <tr>
+                                <td>6</td>
+                                <td>Money</td>
+                               </tr>
+                               <tr>
+                                <td>7</td>
+                                <td>Hangout</td>
+                               </tr>
+                               <tr>
+                                <td>8</td>
+                                <td>Game</td>
+                               </tr>
+                               <tr>
+                                <td>9</td>
+                                <td>Show</td>
+                               </tr>
+                               <tr>
+                                <td>10</td>
+                                <td>Famous people</td>
+                               </tr>
+
+                            <tr class="footer">
+                                <td colspan="6" >
+                                  <span><i class="fa-solid fa-caret-left"></i></span>
+                                  <span>1</span>
+                                  <span>2</span>
+                                  <span>...</span>
+                                  <span>10</span>
+                                  <span><i class="fa-solid fa-caret-right"></i></span>
+                                </td>
+                              </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
   </body>
+</html>
