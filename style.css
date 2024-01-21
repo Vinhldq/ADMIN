@@ -1,39 +1,52 @@
-.navbar 
-{
- font-size: medium;
- height: 50px;
- width: 100%;
- background-color: #262626;
-a
- {
-  color: #C6C6C6;
-  font-size: 20px;
-  text-decoration: none;
-  float: left;
-  display: block;
-  padding: 10px ;
- }
+.navbar {
+  font-family: 'IBM Plex Sans', sans-serif;
+  height: 50px;
+  width: 100%;
+  background-color: #262626;
+
+  a {
+    color: #C6C6C6;
+    font-size: 20px;
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+  }
 }
+
+.navbar {
+  a:nth-child(5) {
+    border-bottom: 3px solid #fff;
+  }
+}
+
+.material-symbols-outlined {
+  border: 0px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
 .first {
   width: 1500px;
   max-width: calc(100% - 30px);
   margin-left: auto;
   margin-right: auto;
 }
+
 .first {
   width: 100%;
   display: flex;
 }
 
-.rsearch
-{
+.rsearch {
   align-items: center;
   border: 0;
   display: flex;
   justify-content: start;
   gap: 5px;
-  input
-  {
+
+  input {
     font-size: 15px;
     outline: none;
     border: none;
@@ -41,11 +54,16 @@ a
   }
 }
 
+body table .left {
+  color: #525252;
+}
 
 html,
 body {
 
+
   scroll-behavior: smooth;
+  margin: 0;
 }
 
 html {
@@ -54,28 +72,28 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
-.first
-{
+
+.first {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
+
 .left table {
   width: 100%;
   border-collapse: collapse;
 }
 
 .left table thead tr:first-child th {
-  padding: 20px;
+  padding: 10px;
   border-bottom: 1px solid #c5c5c5;
   background-color: #f4f4f4;
   color: #525252;
 }
 
-.left table thead tr:first-child .search input 
-{
+.left table thead tr:first-child .search input {
   width: 90%;
   height: 15px;
   outline: none;
@@ -88,8 +106,7 @@ body {
 }
 
 
-.left table thead tr th 
-{
+.left table thead tr th {
   font-size: 16px;
   padding: 15px;
   text-align: left;
@@ -98,17 +115,19 @@ body {
   font-weight: 600;
 }
 
-.left table tbody tr td 
-{
-  font-size: 16px;
+.left table tbody tr td {
+  font-size: 15px;
   padding: 15px;
   border-bottom: 1px solid #c5c5c5;
   background-color: #f4f4f4;
   color: #525252;
 }
+
 tr.footer td {
-  text-align: center; /* Canh giữa theo chiều ngang */
-  vertical-align: middle; /* Canh giữa theo chiều dọc */
+  text-align: center;
+  /* Canh giữa theo chiều ngang */
+  vertical-align: middle;
+  /* Canh giữa theo chiều dọc */
 }
 
 .left .footer span {
@@ -124,28 +143,28 @@ tr.footer td {
 
 
 
-.left 
-{
+.left {
   width: 75%;
 }
-.right
-{
- width: 25%;
+
+.right {
+  width: 25%;
 }
 
 
-.left .button
-{
+.left .button {
   height: 56x;
   width: 112px;
   background-color: #262626;
   font-size: 16px;
   color: #ffffff;
   border: 0px;
+  cursor: pointer;
 }
 
-
-
+.left .button:active {
+  transform: translateY(4px);
+}
 
 
 
@@ -156,14 +175,13 @@ tr.footer td {
 }
 
 .right table thead tr:first-child th {
-  padding: 20px;
+  padding: 10px;
   border-bottom: 1px solid #c5c5c5;
   background-color: #f4f4f4;
   color: #525252;
 }
 
-.right table thead tr:first-child .rsearch input 
-{
+.right table thead tr:first-child .rsearch input {
   width: 90%;
   height: 15px;
   outline: none;
@@ -176,8 +194,7 @@ tr.footer td {
 }
 
 
-.right table thead tr th 
-{
+.right table thead tr th {
   font-size: 16px;
   padding: 15px;
   text-align: left;
@@ -186,22 +203,22 @@ tr.footer td {
   font-weight: 600;
 }
 
-.right table tbody tr td 
-{
-  font-size: 16px;
+.right table tbody tr td {
+  font-size: 15px;
   padding: 15px;
   border-bottom: 1px solid #c5c5c5;
   background-color: #f4f4f4;
   color: #525252;
 }
-tr.footer td 
-{
-  text-align: center; /* Canh giữa theo chiều ngang */
-  vertical-align: middle; /* Canh giữa theo chiều dọc */
+
+tr.footer td {
+  text-align: center;
+  /* Canh giữa theo chiều ngang */
+  vertical-align: middle;
+  /* Canh giữa theo chiều dọc */
 }
 
-.right .footer span 
-{
+.right .footer span {
   margin: 0 20px;
   cursor: pointer;
 }
@@ -209,12 +226,171 @@ tr.footer td
 .right .footer span:nth-child(2) {
   border-bottom: 3px solid #182fc6;
 }
-.right .button
-{
+
+.right .button {
   height: 56x;
   width: 112px;
   background-color: #262626;
   font-size: 16px;
   color: #ffffff;
   border: 0px;
+  cursor: pointer;
+}
+
+.right .button:active {
+  transform: translateY(4px);
+}
+
+.header-content {
+  color: #ffff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: none;
+}
+
+.icon .material-symbols-outlined {
+  background-color: #262626;
+}
+
+.modal-content .close {
+  border: none;
+  background-color: #262626;
+}
+
+.avatar-img {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.avatar .time {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+
+  .material-symbols-outlined {
+    color: #ffff;
+    background-color: #262626;
+  }
+}
+
+.avatar {
+  border-top: 2px solid #A2a4a4;
+  display: flex;
+}
+
+.avatar .name {
+  gap: 10px;
+  line-height: 5px;
+}
+
+.img {
+  width: 400px;
+  height: 350px;
+}
+
+.interact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .material-symbols-outlined {
+    color: #ffff;
+    background-color: #262626;
+  }
+}
+
+.interact {
+  border-top: 2px solid #A2a4a4;
+  border-bottom: 2px solid #A2a4a4;
+
+  .a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .b {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .c {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+
+#body-content p {
+  color: #ffff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #262626;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 550px;
+  width: 400px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
